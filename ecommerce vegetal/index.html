@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>home</title>
+    <link rel="stylesheet" href="style.css"> 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"> 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" /> 
+</head>
+<body>
+    <header>
+        <a href="#" class="logo"><i class='bx bxs-basket'></i>Delicacy</a> <!-- Logo do site -->
+
+        <div class="bx bx-menu" id="menu-icon"></div> <!-- Ícone do menu, útil para responsividade -->
+
+        <ul class="navbar"> <!-- Menu de navegação -->
+            <li><a href="#home" class="home-activate">Home</a></li>
+            <li><a href="#categories">Categories</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#customers">Customers</a></li>
+        </ul>
+
+        <div class="profile"> <!-- Seção de perfil do usuário -->
+            <img src="./images/profile.png"> <!-- Imagem do perfil -->
+            <span>Abdus Rahman</span> <!-- Nome do usuário -->
+            <i class='bx bx-caret-down'></i> <!-- Ícone para menu dropdown -->
+        </div>
+    </header>
+
+    <section class="home-swiper" id="home"> <!-- Seção do Swiper para a página inicial -->
+        <div class="swiper-wrapper"> <!-- Wrapper do Swiper -->
+            <div class="swiper-slide container" id="slide-1"> <!-- Primeiro slide -->
+                <div class="home-text">
+                    <span>We are Delicacy</span>
+                    <h1>Choose Delicacy <br> the best healthy <br>chicken salad</h1> <!-- Texto principal do slide -->
+                    <a href="#" class="btn">Shop Now<i class='bx bx-right-arrow-alt'></i></a> <!-- Botão para comprar -->
+                </div>
+                <img src="./images/pngtree-shish-kebab-with-watermelon-garnish-food-shish-concept-photo-image_27147366.jpg"> <!-- Imagem do slide -->
+            </div>
+
+         
+            <div class="swiper-slide container" id="slide-2">
+                <div class="home-text">
+                    <span>We are Delicacy</span>
+                    <h1>Choose Delicacy <br> the best healthy <br>chicken salad</h1>
+                    <a href="#" class="btn">Shop Now<i class='bx bx-right-arrow-alt'></i></a>
+                </div>
+                <img src="./images_slide/salada2.webp">
+            </div>
+
+            <div class="swiper-slide container" id="slide-3">
+                <div class="home-text">
+                    <span>We are Delicacy</span>
+                    <h1>Choose Delicacy <br> the best healthy <br>chicken salad</h1>
+                    <a href="#" class="btn">Shop Now<i class='bx bx-right-arrow-alt'></i></a>
+                </div>
+                <img src="./images_slide/salada3.jpg">
+            </div>
+        </div>
+
+        <div class="swiper-button-next"></div> <!-- Botão para próximo slide -->
+        <div class="swiper-button-prev"></div> <!-- Botão para slide anterior -->
+        <div class="swiper-pagination"></div> <!-- Indicadores de paginação -->
+    </section>
+
+    <section class="categories" id="categories"> <!-- Seção de categorias -->
+        <div class="heading">
+            <h1>Browse Our Hottest <br><span>Categories</span></h1> <!-- Título da seção -->
+            <a href="#" class="btn">See All<i class='bx bx-right-arrow-alt'></i></a> <!-- Botão para ver todas as categorias -->
+        </div>
+
+        <div class="teste"> <!-- Container para as categorias -->
+
+            <div class="categories-conatiner"> <!-- Container de categoria -->
+                <div class="box box1"> <!-- Estilo para a caixa de categoria -->
+                    <img src="images/frutas.png"> <!-- Imagem da categoria -->
+                    <h2>Fruits</h2> <!-- Nome da categoria -->
+                    <span>22 items</span> <!-- Número de itens na categoria -->
+                    <i class='bx bx-right-arrow-alt'></i> <!-- Ícone de seta -->
+                </div>
+            </div>
+    
+            <!-- Repetição de containers de categorias -->
+            <div class="categories-conatiner">
+                <div class="box box2">
+                    <img src="./images/vegetais.png">
+                    <h2>Vegetais</h2>
+                    <span>22 items</span>
+                    <i class='bx bx-right-arrow-alt'></i>
+                </div>
+            </div>
+    
+            <div class="categories-conatiner">
+                <div class="box box3">
+                    <img src="./images/drinks.png">
+                    <h2>Drinks</h2>
+                    <span>22 items</span>
+                    <i class='bx bx-right-arrow-alt'></i>
+                </div>
+            </div>
+    
+            <div class="categories-conatiner">
+                <div class="box box4">
+                    <img src="./images/bowl2.png">
+                    <h2>Fruits</h2>
+                    <span>22 items</span>
+                    <i class='bx bx-right-arrow-alt'></i>
+                </div>
+            </div>
+    
+            <div class="categories-conatiner">
+                <div class="box box5">
+                    <img src="./images/spice.png">
+                    <h2>Spices</h2>
+                    <span>22 items</span>
+                    <i class='bx bx-right-arrow-alt'></i>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="products" id="products"> <!-- Seção de produtos -->
+        <div class="heading">
+            <h1>Our Popular<br><span>Products</span></h1> <!-- Título da seção -->
+            <a href="#" class="btn">Shop Now<i class='bx bx-right-arrow-alt'></i></a> <!-- Botão para comprar -->
+        </div>
+
+        <div class="products-conatiner"> <!-- Container de produtos -->
+            <div class="box"> <!-- Primeira caixa de produto -->
+                <img src="./images/morango.png"> <!-- Imagem do produto -->
+                <span>Fresh Items</span> <!-- Indicação de frescor -->
+                <h2>Farm fresh organic <br>fruits 25g</h2> <!-- Nome do produto -->
+                <h3 class="price">$7.99 <span>/kg</span></h3> <!-- Preço do produto -->
+                <i class='bx bx-cart-alt'></i> <!-- Ícone de carrinho -->
+                <i class='bx bx-heart'></i> <!-- Ícone de favorito -->
+                <span class="discount">-25%</span> <!-- Desconto do produto -->
+            </div>
+
+            <!-- Repetição de caixas de produto -->
+            <div class="box">
+                <img src="./images/cherry.png">
+                <span>Fresh Items</span>
+                <h2>Farm fresh organic <br>fruits 25g</h2>
+                <h3 class="price">$7.99 <span>/kg</span></h3>
+                <i class='bx bx-cart-alt'></i>
+                <i class='bx bx-heart'></i>
+                <span class="discount">-25%</span>
+            </div>
+
+            <div class="box">
+                <img src="./images/tomate.png">
+                <span>Fresh Items</span>
+                <h2>Farm fresh organic <br>fruits 25g</h2>
+                <h3 class="price">$7.99 <span>/kg</span></h3>
+                <i class='bx bx-cart-alt'></i>
+                <i class='bx bx-heart'></i>
+                <span class="discount">-25%</span>
+            </div>
+
+            <div class="box">
+                <img src="./images/batata.png">
+                <span>Fresh Items</span>
+                <h2>Farm fresh organic <br>fruits 25g</h2>
+                <h3 class="price">$7.99 <span>/kg</span></h3>
+                <i class='bx bx-cart-alt'></i>
+                <i class='bx bx-heart'></i>
+                <span class="discount">-25%</span>
+            </div>
+
+            <div class="box">
+                <img src="./images/pimentao.png">
+                <span>Fresh Items</span>
+                <h2>Farm fresh organic <br>fruits 25g</h2>
+                <h3 class="price">$7.99 <span>/kg</span></h3>
+                <i class='bx bx-cart-alt'></i>
+                <i class='bx bx-heart'></i>
+                <span class="discount">-25%</span>
+            </div>
+
+            <div class="box">
+                <img src="./images/pessego.png">
+                <span>Fresh Items</span>
+                <h2>Farm fresh organic <br>fruits 25g</h2>
+                <h3 class="price">$7.99 <span>/kg</span></h3>
+                <i class='bx bx-cart-alt'></i>
+                <i class='bx bx-heart'></i>
+                <span class="discount">-25%</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="about" id="about"> <!-- Seção sobre nós -->
+        <img src="./images/about.png"> <!-- Imagem da seção -->
+        <div class="about-text">
+            <span>About Us</span> <!-- Título -->
+            <p>Bem-vindo ao nosso e-commerce de verduras e frutas! Somos apaixonados por promover uma alimentação saudável e sustentável, oferecendo produtos frescos, de alta qualidade e colhidos diretamente de produtores locais. Nossa missão é facilitar o acesso a uma variedade de frutas e verduras, garantindo que você receba apenas o melhor em sua casa.</p>
+            <p>Acreditamos que a frescura faz toda a diferença no sabor e na nutrição, por isso trabalhamos apenas com fornecedores que compartilham nosso compromisso com práticas agrícolas responsáveis. Com uma plataforma fácil de usar, você pode explorar uma ampla gama de produtos, desde itens comuns até variedades exóticas, tudo a poucos cliques de distância.
+
+                Nosso objetivo é proporcionar uma experiência de compra agradável e conveniente, com entregas rápidas e seguras. Junte-se a nós na jornada rumo a uma alimentação mais saudável e saborosa!</p>
+            <a href="#" class="btn">Learn More<i class='bx bx-right-arrow-alt'></i></a> <!-- Botão para saber mais -->
+    </section>
+
+    <section class="customers" id="customers"> <!-- Seção de depoimentos dos clientes -->
+        <h2>Why Costumer's Love us?</h2> <!-- Título da seção -->
+
+        <div class="customers-container"> <!-- Container para os depoimentos -->
+            <div class="box"> <!-- Primeiro depoimento -->
+                <i class='bx bxs-quote-alt-left'></i> <!-- Ícone de citação -->
+                <div class="stars"> <!-- Sistema de estrelas -->
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star-half'></i>
+                </div>
+                <p>Variedade de Produtos: "A variedade de vegetais e frutas disponíveis é impressionante! Além dos itens tradicionais, sempre descubro novidades e produtos locais. Isso torna a compra muito mais interessante e incentiva uma alimentação saudável."</p>
+                <div class="review-profile"> <!-- Informações do cliente -->
+                    <img src="images/kat.webp"> <!-- Imagem do cliente -->
+                    <h3>Kathelyn</h3> <!-- Nome do cliente -->
+                </div>
+            </div>
+
+            <div class="box"> <!-- Segundo depoimento -->
+                <i class='bx bxs-quote-alt-left'></i>
+                <div class="stars">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star-half'></i>
+                </div>
+                <p>Frescor e Qualidade: "A qualidade dos produtos na loja é excepcional! Sempre encontro frutas e verduras frescas, com um sabor que faz toda a diferença nas minhas receitas. É um prazer saber que posso contar com a frescura dos alimentos a cada visita."</p>
+                <div class="review-profile">
+                    <img src="images/daniel.png">
+                    <h3>Daniel Corte</h3>
+                </div>
+            </div>
+
+            <div class="box"> <!-- Terceiro depoimento -->
+                <i class='bx bxs-quote-alt-left'></i>
+                <div class="stars">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star-half'></i>
+                </div>
+                <p>Atendimento Amigável: "O atendimento na loja é sempre cordial e atencioso. Os funcionários estão prontos para ajudar com recomendações e dicas de como preparar os produtos. Essa atenção faz toda a diferença na experiência de compra!"</p>
+                <div class="review-profile">
+                    <img src="images/bareli.webp">
+                    <h3>Lucas Bareli</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="footer" id="footer"> <!-- Seção do rodapé -->
+        <div class="footer-box">
+            <a href="#" class="logo"><i class='bx bxs-basket'></i>Delicacy</a> <!-- Logo no rodapé -->
+            <p>Campinas, São Paulo, Rua Avenida Francisco Glicério, 10024</p> <!-- Endereço -->
+            <div class="social"> <!-- Ícones de redes sociais -->
+                <i class='bx bxl-facebook'></i>
+                <i class='bx bxl-instagram'></i>
+                <i class='bx bxl-whatsapp'></i>
+                <i class='bx bxl-youtube'></i>
+            </div>
+
+            <div class="footer-box-container"> <!-- Container para as caixas do rodapé -->
+
+                <div class="footer-box"> <!-- Primeira caixa -->
+                    <h2>Categories</h2>
+                    <a href="#">Fruits & Vegetabels</a> <!-- Link para categorias -->
+                    <a href="#">Our produts</a>
+                    <a href="#">Package Food</a>
+                    <a href="#">bevarage</a>
+                </div>
+    
+                <div class="footer-box"> <!-- Segunda caixa -->
+                    <h2>Useful Links</h2>
+                    <a href="#">Payment 7 Tax</a>
+                    <a href="#">Terms Of Use</a>
+                    <a href="#">My Blog</a>
+                    <a href="#">Return Policy</a>
+                </div> 
+    
+                <div class="footer-box"> <!-- Terceira caixa -->
+                    <h2>Newsletter</h2>
+                    <p>Get 10% Discount with <br>Email Newsletter</p>
+                    <form action="">
+                    <i class='bx bxs-envelope'></i> <!-- Ícone de envelope -->
+                    <input type="email" name="" id="" placeholder="Enter your Email"> <!-- Campo para e-mail -->
+                    <i class='bx bx-arrow-back bx-rotate-180'></i> <!-- Ícone de envio -->
+                    </form>
+                </div>
+            </div>
+
+            </div>
+
+    </section>
+    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> <!-- Script do Swiper -->
+    <script src="main.js"></script> <!-- Seu script JavaScript -->
+</body>
+</html>

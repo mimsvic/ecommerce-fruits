@@ -1,0 +1,658 @@
+/* Importando a fonte Poppins do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Estilização geral */
+* {
+    font-family: 'Poppins', sans-serif; /* Fonte padrão para todo o documento */
+    margin: 0; /* Remove margem padrão */
+    padding: 0; /* Remove preenchimento padrão */
+    box-sizing: border-box; /* Inclui padding e bordas na largura total */
+    list-style: none; /* Remove estilo de lista padrão */
+    text-decoration: none; /* Remove sublinhado de links */
+    scroll-padding-top: 2rem; /* Ajusta o preenchimento ao rolar */
+    scroll-behavior: smooth; /* Suaviza o comportamento de rolagem */
+}
+
+/* Definindo variáveis de cores */
+:root {
+    --green-color: #3cb815; /* Verde principal */
+    --light-green-color: #c0eb7b; /* Verde claro */
+    --orange-color: #ff7e00; /* Laranja principal */
+    --light-orange-color: #f75f1d; /* Laranja claro */
+    --text-color: #1a2428; /* Cor do texto */
+    --bg-color: #fff; /* Cor de fundo */
+}
+
+/* Estilização das seções */
+section {
+    padding: 4.5rem 0 1.5rem; /* Espaçamento em seções */
+}
+
+/* Imagens com largura total */
+img {
+    width: 100%;   
+}
+
+/* Estilo do corpo */
+body {
+    color: var(--text-color); /* Cor do texto */
+    overflow-x: hidden; /* Remove a barra de rolagem horizontal */
+}
+
+/* Estilização do cabeçalho */
+header {
+    position: fixed; /* Cabeçalho fixo no topo */
+    width: 100%; /* Largura total */
+    top: 0; /* Alinhado ao topo */
+    right: 0;
+    z-index: 1000; /* Colocando acima de outros elementos */
+    display: flex; /* Flexbox para layout */
+    align-items: center; /* Centraliza verticalmente */
+    justify-content: space-between; /* Espaçamento entre itens */
+    background-color: var(--bg-color); /* Cor de fundo do cabeçalho */
+    box-shadow: 0 8px 11px rgb(14 55 54 / 15%); /* Sombra do cabeçalho */
+    padding: 20px 100px; /* Espaçamento interno */
+    transition: 0.5s; /* Transição suave em mudanças */
+}
+
+/* Estilização do perfil do usuário */
+.profile {
+    display: flex; /* Flexbox para alinhamento */
+    align-items: center; 
+    column-gap: 0.5rem; /* Espaçamento entre elementos */
+    cursor: pointer; /* Cursor de ponteiro ao passar o mouse */
+}
+
+/* Imagem do perfil */
+.profile img {
+    width: 40px; /* Largura da imagem */
+    height: 40px; /* Altura da imagem */
+    object-fit: cover; /* Cobre o espaço sem distorcer */
+    object-position: center; /* Centraliza a imagem */
+    border-radius: 50%; /* Imagem em formato circular */
+}
+
+/* Estilização do texto do perfil */
+.profile span {
+    font-size: 13px; /* Tamanho da fonte */
+    font-weight: 500; /* Peso da fonte */
+}
+
+/* Estilo do logotipo */
+.logo {
+    display: flex; /* Flexbox para alinhamento */
+    align-items: center; 
+    font-size: 1.1rem; /* Tamanho da fonte */
+    font-weight: 600; /* Peso da fonte */
+    color: var(--text-color); /* Cor do texto */
+    column-gap: 0.5rem; /* Espaçamento entre elementos */
+}
+
+/* Ícone do logotipo */
+.logo .bx {
+    font-size: 24px; /* Tamanho do ícone */
+    color: var(--orange-color); /* Cor do ícone */
+}
+
+/* Estilização da barra de navegação */
+.navbar {
+    display: flex; /* Flexbox para alinhamento */
+    column-gap: 0.5rem; /* Espaçamento entre links */
+}
+
+/* Estilo dos links da barra de navegação */
+.navbar a {
+    font-size: 1rem; /* Tamanho da fonte */
+    font-weight: 500; /* Peso da fonte */
+    color: var(--text-color); /* Cor do texto */
+    padding: 0.5rem 1rem; /* Espaçamento interno */
+}
+
+/* Efeitos ao passar o mouse sobre os links */
+.navbar a:hover, .navbar .home-activate {
+    background: var(--green-color); /* Cor de fundo ao passar o mouse */
+    border-radius: 5rem; /* Bordas arredondadas */
+    color: var(--bg-color); /* Cor do texto ao passar o mouse */
+    transition: background 0.5s; /* Transição suave */
+}
+
+/* Ícone do menu (para dispositivos móveis) */
+#menu-icon {
+    font-size: 24px; /* Tamanho do ícone */
+    cursor: pointer; /* Cursor de ponteiro ao passar o mouse */
+    z-index: 10001; /* Acima de outros elementos */
+    display: none; /* Escondido por padrão */
+}
+
+/* Estilo do contêiner principal */
+.container {
+    position: relative; /* Posicionamento relativo */
+    width: 100%; /* Largura total */
+    min-height: 640px; /* Altura mínima */
+    display: flex; /* Flexbox para layout */
+    align-items: center; /* Centraliza verticalmente */
+    background: url('./images_slide/salada.jpg.jpg'); /* Imagem de fundo */
+    background-repeat: no-repeat; /* Sem repetição da imagem */
+    background-size: cover; /* Cobre todo o contêiner */
+    background-position: center; /* Centraliza a imagem */
+    overflow: hidden; /* Oculta qualquer transbordamento */
+}
+
+/* Estilo do texto na seção inicial */
+.home-text {
+    margin-top: 75px; /* Margem superior */
+}
+
+/* Definindo diferentes slides */
+#slide-1 {
+    background: url('./images_slide/salada.jpg.jpg'); /* Imagem de fundo */
+    background-repeat: no-repeat; /* Sem repetição da imagem */
+    background-size: cover; /* Cobre todo o contêiner */
+    background-position: center; /* Centraliza a imagem */
+}
+#slide-2 {
+    background: url('./images_slide/slide14_imagem.jpg'); /* Imagem de fundo */
+    background-repeat: no-repeat; /* Sem repetição da imagem */
+    background-size: cover; /* Cobre todo o contêiner */
+    background-position: center; /* Centraliza a imagem */
+}
+#slide-3 {
+    background: url('./images_slide/slide6salada.jpg'); /* Imagem de fundo */
+    background-repeat: no-repeat; /* Sem repetição da imagem */
+    background-size: cover; /* Cobre todo o contêiner */
+    background-position: center; /* Centraliza a imagem */
+}
+
+/* Imagens dentro do contêiner principal */
+.container img {
+    width: 400px; /* Largura da imagem */
+    position: absolute; /* Posição absoluta dentro do contêiner */
+    bottom: -500px; /* Alinhamento vertical */
+    right: 200px; /* Alinhamento horizontal */
+}
+
+/* Estilo do texto na seção inicial */
+.home-text {
+    padding: 0 150px; /* Preenchimento lateral */
+}
+
+/* Estilo do texto destacado */
+.home-text span {
+    font-weight: 400; /* Peso da fonte */
+    text-transform: uppercase; /* Letras maiúsculas */
+    color: var(--green-color); /* Cor do texto */
+}
+
+/* Título principal */
+.home-text h1 {
+    font-size: 2.4rem; /* Tamanho da fonte */
+    font-weight: 700; /* Peso da fonte */
+    margin-bottom: 1rem; /* Margem inferior */
+}
+
+/* Estilo do botão */
+.btn {
+    padding: 0.6rem 1rem; /* Preenchimento interno */
+    background: var(--green-color); /* Cor de fundo */
+    color: var(--bg-color); /* Cor do texto */
+    font-weight: 400; /* Peso da fonte */
+    border-radius: 5rem; /* Bordas arredondadas */
+    display: flex; /* Flexbox para layout */
+    align-items: center; /* Centraliza verticalmente */
+    justify-content: space-between; /* Espaçamento entre ícones */
+    column-gap: 0.5rem; /* Espaçamento entre elementos */
+    max-width: 160px; /* Largura máxima */
+}
+
+/* Ícone dentro do botão */
+.btn .bx {
+    padding: 4px; /* Preenchimento interno */
+    background: var(--bg-color); /* Cor de fundo do ícone */
+    color: var(--text-color); /* Cor do texto do ícone */
+    border-radius: 1rem; /* Bordas arredondadas */
+    font-size: 20px; /* Tamanho do ícone */
+    margin: auto; /* Margem automática para centralização */
+}
+
+/* Efeitos ao passar o mouse sobre o botão */
+.btn:hover {
+    background: var(--light-orange-color); /* Cor de fundo ao passar o mouse */
+    transition: 0.2s ease; /* Transição suave */
+}
+
+/* Estilo dos botões de navegação do swiper */
+.swiper-button-next {
+    background: url(images/bx-right-arrow-alt.svg); /* Ícone de seta direita */
+    background-repeat: no-repeat; /* Sem repetição do ícone */
+    background-size: 100% auto; /* Tamanho do ícone */
+    background-position: center; /* Centraliza o ícone */
+    margin-right: 20px; /* Margem direita */
+}
+
+.swiper-button-next::after {
+    display: none; /* Oculta texto adicional */
+}
+
+.swiper-button-prev {
+    background: url(images/bx-left-arrow-alt.svg); /* Ícone de seta esquerda */
+    background-repeat: no-repeat; /* Sem repetição do ícone */
+    background-size: 100% auto; /* Tamanho do ícone */
+    background-position: center; /* Centraliza o ícone */
+    margin-right: 20px; /* Margem direita */
+}
+
+.swiper-button-prev::after {
+    display: none; /* Oculta texto adicional */
+}
+
+/* Estilo do cabeçalho de seções */
+.heading {
+    display: flex; /* Flexbox para layout */
+    justify-content: space-between; /* Espaçamento entre elementos */
+    align-items: center; /* Centraliza verticalmente */
+}
+
+/* Título das seções */
+.heading h1 {
+    font-size: 1.6rem; /* Tamanho da fonte */
+    font-weight: 600; /* Peso da fonte */
+}
+
+/* Texto destacado nas seções */
+.heading span {
+    color: var(--green-color); /* Cor do texto */
+}
+
+/* Estilização das categorias */
+.categories {
+    max-width: 968px; /* Largura máxima */
+    margin-left: auto; /* Centraliza à esquerda */
+    margin-right: auto; /* Centraliza à direita */
+}
+
+/* Contêiner das categorias */
+.categories-conatiner {
+    display: grid; /* Grid layout */
+    grid-template-columns: repeat(auto-fit, minmax(180px, auto)); /* Colunas responsivas */
+    gap: 1rem; /* Espaçamento entre as caixas */
+    margin-top: 2rem; /* Margem superior */
+    width: 1220px; /* Largura fixa */
+}
+
+/* Estilo de cada caixa de categoria */
+.categories-conatiner .box {
+    position: relative; /* Posicionamento relativo */
+    display: flex; /* Flexbox para alinhamento */
+    flex-direction: column; /* Alinhamento vertical */
+    align-items: center; /* Centraliza horizontalmente */
+    padding: 20px; /* Preenchimento interno */
+    border-radius: 0.5rem; /* Bordas arredondadas */
+}
+
+/* Imagem dentro da caixa de categoria */
+.categories-conatiner .box img {
+    width: 100%; /* Largura total */
+    height: 100px; /* Altura fixa */
+    object-fit: contain; /* Mantém a proporção da imagem */
+    object-position: center; /* Centraliza a imagem */
+}
+
+/* Estilização das categorias (divisão) */
+.categories-conatiner {
+    display: flex; /* Flexbox para alinhamento */
+}
+
+/* Título das caixas de categoria */
+.categories-container .box h2 {
+    font-size: 1rem; /* Tamanho da fonte */
+    font-weight: 600; /* Peso da fonte */
+}
+
+/* Descrição das caixas de categoria */
+.categories-container .box span {
+    font-size: 0.8rem; /* Tamanho da fonte */
+    font-weight: 400; /* Peso da fonte */
+    margin-bottom: 1rem; /* Margem inferior */
+}
+
+/* Estilo do botão dentro da caixa de categoria */
+.categories-container .box .bx {
+    padding: 10px; /* Preenchimento interno */
+    background: var(--green-color); /* Cor de fundo */
+    color: var(--bg-color); /* Cor do texto */
+    border-radius: 5rem; /* Bordas arredondadas */
+    margin-top: 2rem; /* Margem superior */
+    position: absolute; /* Posição absoluta */
+    bottom: -8%; /* Alinhamento vertical */
+}
+
+/* Efeitos ao passar o mouse sobre o botão das categorias */
+.categories-container .box .bx:hover {
+    background: var(--light-orange-color); /* Cor de fundo ao passar o mouse */
+    transition: 0.2s all linear; /* Transição suave */
+}
+
+/* Efeitos ao passar o mouse sobre o ícone dentro do botão */
+.categories-container .box .bx:hover .bx {
+    display: block; /* Exibe o ícone */
+    transition: 0.2s all linear; /* Transição suave */
+}
+
+/* Estilo das caixas de produtos */
+.box1 {
+    background: #fef4ea; /* Cor de fundo da caixa 1 */
+}
+
+.box2 {
+    background: #e9f4e3; /* Cor de fundo da caixa 2 */
+}
+
+.box3 {
+    background: #faeaea; /* Cor de fundo da caixa 3 */
+}
+
+.box4 {
+    background: #eeeef9; /* Cor de fundo da caixa 4 */
+}
+
+.box5 {
+    background: #f7f6d7; /* Cor de fundo da caixa 5 */
+}
+
+/* Estilo do contêiner de teste */
+.teste {
+    display: flex; /* Flexbox para alinhamento */
+    column-gap: 50px; /* Espaçamento entre elementos */
+}
+
+/* Estilização da seção de produtos */
+.products {
+    max-width: 968px; /* Largura máxima */
+    margin-left: auto; /* Centraliza à esquerda */
+    margin-right: auto; /* Centraliza à direita */
+}
+
+/* Contêiner dos produtos */
+.products-conatiner {
+    display: grid; /* Grid layout */
+    width: 81%; /* Largura fixa */
+    grid-template-columns: repeat(auto-fit, minmax(180px, auto)); /* Colunas responsivas */
+    gap: 1.5rem; /* Espaçamento entre as caixas */
+    margin-top: 2rem; /* Margem superior */
+}
+
+/* Estilo de cada caixa de produto */
+.products-conatiner .box {
+    padding: 20px; /* Preenchimento interno */
+    box-shadow: 1px 2px 11px 4px rgb(14 55 54 / 15%); /* Sombra da caixa */
+    border-radius: 0.5rem; /* Bordas arredondadas */
+    position: relative; /* Posicionamento relativo */
+}
+
+/* Imagem dentro da caixa de produto */
+.products-conatiner .box img {
+    width: 100%; /* Largura total */
+    height: 200px; /* Altura fixa */
+    object-fit: contain; /* Mantém a proporção da imagem */
+    object-position: center; /* Centraliza a imagem */
+}
+
+/* Estilo do texto dos produtos */
+.products-conatiner .box span {
+    font-weight: 500; /* Peso da fonte */
+    font-size: 13px; /* Tamanho da fonte */
+}
+
+/* Título do produto */
+.products-conatiner .box h2 {
+    font-size: 1.2rem; /* Tamanho da fonte */
+    font-weight: 600; /* Peso da fonte */
+}
+
+/* Estilo do preço do produto */
+.products-conatiner .box .price {
+    font-size: 1rem; /* Tamanho da fonte */
+    font-weight: 600; /* Peso da fonte */
+    margin-top: 0.5rem; /* Margem superior */
+    color: var(--light-orange-color); /* Cor do preço */
+}
+
+/* Estilo do preço promocional */
+.products-conatiner .box .price span {
+    color: var(--text-color); /* Cor do preço promocional */
+}
+
+/* Ícone do carrinho de compras */
+.products-conatiner .box .bx-cart-alt {
+    position: absolute; /* Posição absoluta */
+    right: 0; /* Alinhamento à direita */
+    bottom: 0; /* Alinhamento na parte inferior */
+    padding: 10px; /* Preenchimento interno */
+    background: var(--green-color); /* Cor de fundo */
+    color: var(--bg-color); /* Cor do texto */
+    font-size: 20px; /* Tamanho do ícone */
+    border-radius: 0.5rem 0 0.5rem 0; /* Bordas arredondadas */
+}
+
+/* Efeitos ao passar o mouse sobre o ícone do carrinho */
+.products-conatiner .box .bx-cart-alt:hover {
+    background: var(--orange-color); /* Cor de fundo ao passar o mouse */
+    transition: 0.2s all linear; /* Transição suave */
+}
+
+/* Ícone do favorito */
+.products-conatiner .box .bx-heart {
+    position: absolute; /* Posição absoluta */
+    top: 1rem; /* Alinhamento superior */
+    right: 1rem; /* Alinhamento à direita */
+    font-size: 20px; /* Tamanho do ícone */
+    color: var(--light-orange-color); /* Cor do ícone */
+} 
+
+/* Estilo do desconto */
+.products-conatiner .box .discount {
+    position: absolute; /* Posição absoluta */
+    top: 1rem; /* Alinhamento superior */
+    left: 0; /* Alinhamento à esquerda */
+    background: var(--light-orange-color); /* Cor de fundo do desconto */
+    color: var(--bg-color); /* Cor do texto */
+    padding: 4px 18px; /* Preenchimento interno */
+    clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 0 100%, 0% 50%, 0 0); /* Forma do desconto */
+}
+
+/* Estilização da seção sobre nós */
+.about {
+    max-width: 968px; /* Largura máxima */
+    margin-left: auto; /* Centraliza à esquerda */
+    margin-right: auto; /* Centraliza à direita */
+    display: grid; /* Grid layout */
+    grid-template-columns: repeat(auto-fit, minmax(21rem, auto)); /* Colunas responsivas */
+    align-items: center; /* Alinhamento vertical */
+    gap: 1.5rem; /* Espaçamento entre os itens */
+}
+
+/* Texto destacado na seção sobre nós */
+.about-text span {
+    font-weight: 600; /* Peso da fonte */
+    text-transform: uppercase; /* Texto em maiúsculas */
+    color: var(--green-color); /* Cor do texto */
+}
+
+/* Parágrafo na seção sobre nós */
+.about-text p {
+    margin: 0.5rem 0 1rem; /* Margens */
+}
+
+/* Estilização da seção de clientes */
+.customers {
+    max-width: 968px; /* Largura máxima */
+    margin-left: auto; /* Centraliza à esquerda */
+    margin-right: auto; /* Centraliza à direita */
+}
+
+/* Título da seção de clientes */
+.customer h2 {
+    text-align: center; /* Centraliza o texto */
+    font-size: 1.6rem; /* Tamanho da fonte */
+    font-weight: 600; /* Peso da fonte */
+}
+
+/* Contêiner dos depoimentos dos clientes */
+.customers-container {
+    display: grid; /* Grid layout */
+    grid-template-columns: repeat(auto-fit, minmax(280px, auto)); /* Colunas responsivas */
+    align-items: center; /* Alinhamento vertical */
+    gap: 1.5rem; /* Espaçamento entre as caixas */
+    margin-top: 2rem; /* Margem superior */
+}
+
+/* Estilo de cada caixa de depoimento */
+.customers-container .box {
+    padding: 20px; /* Preenchimento interno */
+    box-shadow: 1px 2px 11px 4px rgb(14 55 54/ 15%); /* Sombra da caixa */
+    border-radius: 0.5rem; /* Bordas arredondadas */
+    border-bottom: 7px solid var(--green-color); /* Borda inferior */
+}
+
+/* Efeitos ao passar o mouse sobre o depoimento */
+.customers-container .box:hover {
+    transform: translateY(10px); /* Move a caixa para cima */
+    transition: 0.2s all linear; /* Transição suave */
+}
+
+/* Estilo do ícone na caixa de depoimento */
+.customers-container .box .bx {
+    font-size: 24px; /* Tamanho do ícone */
+    color: var(--green-color); /* Cor do ícone */
+}
+
+/* Estilo das estrelas na caixa de depoimento */
+.customers-container .box .stars .bx {
+    font-size: 1rem; /* Tamanho do ícone */
+    color: var(--light-orange-color); /* Cor do ícone */
+}
+
+/* Estilo do parágrafo na caixa de depoimento */
+.customers-container .box .p {
+    font-size: 0.938rem; /* Tamanho do texto */
+}
+
+/* Estilização do perfil do revisor */
+.review-profile {
+    display: flex; /* Flexbox para alinhamento */
+    align-items: center; /* Centraliza verticalmente */
+    margin-top: 1rem; /* Margem superior */
+    column-gap: 0.5rem; /* Espaçamento entre os elementos */
+}
+
+/* Imagem do revisor */
+.review-profile img {
+    width: 60px; /* Largura da imagem */
+    height: 60px; /* Altura da imagem */
+    border-radius: 50%; /* Imagem redonda */
+    object-fit: cover; /* Manter proporção */
+    object-position: center; /* Centraliza a imagem */
+}
+
+/* Nome do revisor */
+.review-profile h3 {
+    font-size: 1rem; /* Tamanho da fonte */
+    font-weight: 600; /* Peso da fonte */
+}
+
+/* Estilização do rodapé */
+.footer {
+    max-width: 968px; /* Largura máxima */
+    margin-left: auto; /* Centraliza à esquerda */
+    margin-right: auto; /* Centraliza à direita */
+    display: flex; /* Flexbox para layout */
+    grid-template-columns: repeat(auto-fit, minmax(200px, auto)); /* Colunas responsivas */
+    gap: 1.5rem; /* Espaçamento entre as caixas */
+    margin-top: 2rem; /* Margem superior */
+    background: #fef4ea; /* Cor de fundo */
+    border-radius: 0.5rem; /* Bordas arredondadas */
+    padding: 20px; /* Preenchimento interno */
+}
+
+/* Contêiner das caixas do rodapé */
+.footer-box-container {
+    display: flex; /* Flexbox para layout */
+    width: 100%; /* Largura total */
+    justify-content: space-around; /* Espaçamento entre as caixas */
+}
+
+/* Estilo de cada caixa no rodapé */
+.footer-box {
+    display: flex; /* Flexbox para layout */
+    width: 100%; /* Largura total */
+    flex-direction: column; /* Alinhamento vertical */
+}
+
+/* Parágrafo dentro das caixas do rodapé */
+.footer-box p {
+    font-size: 0.938rem; /* Tamanho da fonte */
+    margin: 0.5rem 0 1rem; /* Margens */
+}
+
+/* Estilização dos links de redes sociais */
+.social {
+    display: flex; /* Flexbox para alinhamento */
+    align-items: center; /* Centraliza verticalmente */
+    column-gap: 0.9rem; /* Espaçamento entre os ícones */
+    padding: 20px 0; /* Preenchimento vertical */
+}
+
+/* Estilo dos ícones de redes sociais */
+.social .bx {
+    padding: 10px; /* Preenchimento interno */
+    background: var(--bg-color); /* Cor de fundo */
+    color: var(--green-color); /* Cor do ícone */
+    border-radius: 5rem; /* Bordas arredondadas */
+}
+
+/* Efeitos ao passar o mouse sobre os ícones de redes sociais */
+.social .bx:hover {
+    background: var(--green-color); /* Cor de fundo ao passar o mouse */
+    color: var(--bg-color); /* Cor do ícone ao passar o mouse */
+    transition: 0.2s all linear; /* Transição suave */
+}
+
+/* Título das caixas no rodapé */
+.footer-box h2 {
+    font-size: 1.1rem; /* Tamanho da fonte */
+    font-weight: 600; /* Peso da fonte */
+    margin-bottom: 1rem; /* Margem inferior */
+}
+
+/* Estilo dos links no rodapé */
+.footer-box a {
+    color: #868a92; /* Cor dos links */
+    margin-bottom: 1rem; /* Margem inferior */
+}
+
+/* Efeitos ao passar o mouse sobre os links do rodapé */
+.footer-box a:hover {
+    color: var(--light-orange-color); /* Cor ao passar o mouse */
+}
+
+/* Estilo do formulário no rodapé */
+.footer-box form {
+    border-bottom: 1px solid var(--text-color); /* Borda inferior */
+    padding: 10px; /* Preenchimento interno */
+    display: flex; /* Flexbox para layout */
+    align-items: center; /* Centraliza verticalmente */
+    column-gap: 0.5rem; /* Espaçamento entre os elementos */
+}
+
+/* Estilo do campo de entrada no formulário */
+.footer-box form input {
+    background: transparent; /* Fundo transparente */
+    border: none; /* Sem borda */
+    outline: none; /* Sem contorno */
+}
+
+/* Estilo da paginação do swiper */
+#home > div.swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-horizontal {
+    position: absolute; /* Posição absoluta */
+    bottom: 20%; /* Alinhamento na parte inferior */
+}
